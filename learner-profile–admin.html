@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+	<title>Learner profile – admin</title>
+
+	<link rel="stylesheet" href="libs/bootstrap4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/fontawesome5/css/all.css">
+	<link rel="stylesheet" href="libs/flaticon/flaticon.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/chosen.css">
+	<link rel="stylesheet" href="css/system.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+	<header class="header">
+		<nav class="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-5 col-md-3 col-lg-3">
+						<div class="social-icons">
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-facebook-f"></i></a>
+							</div>
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-twitter"></i></a>
+							</div>
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-youtube"></i></a>
+							</div>
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-instagram"></i></a>
+							</div>
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-telegram-plane"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offset-lg-4 col-5 col-sm-3 col-md-5 col-lg-2">
+						<div class="location" data-toggle="modal" data-target="#exampleModalCenter">
+							<span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+							<span class="location-text">Toshkent</span>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h3 class="modal-title" id="exampleModalLongTitle">Shahringizni tanlang</h3>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<hr class="hr-dark"></hr>
+									<div class="modal-body">
+										<div class="form-group">
+											<label for="findtown" class="form-control-label">Ro'yxatdan o'zingizning shaharingizni tanlang yoki uni spam-shaklda kiriting:</label>
+											<input type="text" class="form-control form-control-small" placeholder="O’zingizga kerakli shaharni kiriting..." id="findtown">
+										</div>
+										<div class="cities">
+											<ul class="cities-list">
+												<li class="cities-item city-active"><a href="#">Tashkent</a></li>
+												<li class="cities-item"><a href="#">Samarqand</a></li>
+												<li class="cities-item"><a href="#">Namangan</a></li>
+												<li class="cities-item"><a href="#">Andijon</a></li>
+												<li class="cities-item"><a href="#">Buxoro</a></li>
+												<li class="cities-item"><a href="#">Nukus</a></li>
+												<li class="cities-item"><a href="#">Qarshi</a></li>
+												<li class="cities-item"><a href="#">Qoʻqon</a></li>
+												<li class="cities-item"><a href="#">Chirchiq</a></li>
+												<li class="cities-item"><a href="#">Fargʻona</a></li>
+												<li class="cities-item"><a href="#">Jizzax</a></li>
+												<li class="cities-item"><a href="#">Urganch</a></li>
+												<li class="cities-item"><a href="#">Termiz</a></li>
+												<li class="cities-item"><a href="#">TashMargʻilonkent</a></li>
+											</ul>
+											<ul class="cities-list">
+												<li class="cities-item"><a href="#">Navoiy</a></li>
+												<li class="cities-item"><a href="#">Angren</a></li>
+												<li class="cities-item"><a href="#">Olmaliq</a></li>
+												<li class="cities-item"><a href="#">Bekobod</a></li>
+												<li class="cities-item"><a href="#">Xoʻjayli</a></li>
+												<li class="cities-item"><a href="#">Denov</a></li>
+												<li class="cities-item"><a href="#">Shahrixon</a></li>
+												<li class="cities-item"><a href="#">Chust</a></li>
+												<li class="cities-item"><a href="#">Kogon</a></li>
+												<li class="cities-item"><a href="#">Zarafshon</a></li>
+												<li class="cities-item"><a href="#">Koson</a></li>
+												<li class="cities-item"><a href="#">Qoʻngʻirot</a></li>
+												<li class="cities-item"><a href="#">Taxiatosh</a></li>
+												<li class="cities-item"><a href="#">Shahrisabz</a></li>
+											</ul>
+											<ul class="cities-list">
+												<li class="cities-item"><a href="#">Kattaqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Asaka</a></li>
+												<li class="cities-item"><a href="#">Xiva</a></li>
+												<li class="cities-item"><a href="#">Guliston</a></li>
+												<li class="cities-item"><a href="#">Beruniy</a></li>
+												<li class="cities-item"><a href="#">Chortoq</a></li>
+												<li class="cities-item"><a href="#">Toʻrtkoʻl</a></li>
+												<li class="cities-item"><a href="#">Urgut</a></li>
+												<li class="cities-item"><a href="#">Kosonsoy</a></li>
+												<li class="cities-item"><a href="#">Kitob</a></li>
+												<li class="cities-item"><a href="#">Yangiyoʻl</a></li>
+												<li class="cities-item"><a href="#">Gʻijduvon</a></li>
+												<li class="cities-item"><a href="#">Xonqa</a></li>
+												<li class="cities-item"><a href="#">Oqtosh</a></li>
+											</ul>
+											<ul class="cities-list">
+												<li class="cities-item"><a href="#">Chimboy</a></li>
+												<li class="cities-item"><a href="#">Parkent</a></li>
+												<li class="cities-item"><a href="#">Ohangaron</a></li>
+												<li class="cities-item"><a href="#">Uchqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Qamashi</a></li>
+												<li class="cities-item"><a href="#">Quva</a></li>
+												<li class="cities-item"><a href="#">Uchquduq</a></li>
+												<li class="cities-item"><a href="#">Xonobod</a></li>
+												<li class="cities-item"><a href="#">Yangiyer</a></li>
+												<li class="cities-item"><a href="#">Quvasoy</a></li>
+												<li class="cities-item"><a href="#">Mangʻit</a></li>
+												<li class="cities-item"><a href="#">Rishton</a></li>
+												<li class="cities-item"><a href="#">Nurota</a></li>
+												<li class="cities-item"><a href="#">Muborak</a></li>
+											</ul>
+											<ul class="cities-list">
+												<li class="cities-item"><a href="#">Toshbuloq</a></li>
+												<li class="cities-item"><a href="#">Yangiqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Toʻraqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Gurlan</a></li>
+												<li class="cities-item"><a href="#">Piskent</a></li>
+												<li class="cities-item"><a href="#">Qibray</a></li>
+												<li class="cities-item"><a href="#">Zomin</a></li>
+												<li class="cities-item"><a href="#">Iskandar</a></li>
+												<li class="cities-item"><a href="#">Qoraoʻzak</a></li>
+												<li class="cities-item"><a href="#">Shovot</a></li>
+												<li class="cities-item"><a href="#">Taxtakoʻpir</a></li>
+												<li class="cities-item"><a href="#">Jarqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Bulungʻur</a></li>
+												<li class="cities-item"><a href="#">. . .</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-7 col-sm-4 col-md-4 col-lg-3">
+						<div class="phone-number">
+							<a href="tel:+998(90)900-12-34">+998(90) 900-12-34</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<nav class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-md-4 col-lg-2">
+						<div class="navbar-logo">
+							<a href="index.html"><img src="img/logo_header.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6">
+						<ul class="nav-menu">
+							<li class="nav-menu-list"><a href="index.html">Bosh sahifa</a></li>
+							<li class="nav-menu-list"><a href="tutors_list.html">Repetirorlar</a></li>
+							<li class="nav-menu-list"><a href="courses_list.html">O’quv kurslari</a></li>
+							<li class="nav-menu-list"><a href="education_list.html">O’quv markazlari</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-9 col-md-8 col-lg-4">
+						<div class="auth-buttons my-profile">
+							<div class="auth-buttons-item">
+								<a href="#" class="btn btn-primary">Loyihada qatnashish</a>
+							</div>
+							<div class="auth-my-profile">
+								<a href="#" class="my-profile-icon icon-envelope"><i class="fas fa-envelope"></i></a>
+								<a href="#" class="my-profile-icon icon-bell"><i class="fas fa-bell"></i></a>
+								<a href="#" class="my-profile-img" style="background-image: url(img/ph1.jpg);"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup">
+				<div class="user-popup">
+					<div class="user-popup-img" style="background-image: url(img/ph1.jpg);"></div>
+					<h5 class="h5">Khasan Shukurov Basriy</h5>
+					<ul class="user-popup-list">
+						<hr class="hr-list">
+						<li class="list-item"><a href="">Mening Profilim</a></li>
+						<hr class="hr-list">
+						<li class="list-item"><a href="">Arizalar</a></li>
+						<hr class="hr-list">
+						<li class="list-item"><a href="">Reklama va premium listing</a></li>
+						<hr class="hr-list">
+						<li class="list-item"><a href="">Sahifa statistikasi</a></li>
+						<hr class="hr-list">
+						<li class="list-item"><a href="">Moyilaviy ma’lumot</a></li>
+						<hr class="hr-list">
+						<li class="list-item"><a href="">Hujjatlar</a></li>
+						<hr class="hr-list">
+						<li class="list-item"><a href="">Sozlashlar</a></li>
+						<hr class="hr-list">
+						<li class="list-item"><a href="">Ko’p beriladigan savollar</a></li>
+						<hr class="hr-list">
+						<li class="list-item active-exit"><a href="">Chiqish</a></li>
+						<hr class="hr-list">
+					</ul>
+				</div>
+				<div class="notifications-popup">
+					<div class="popup-subtitle">Bildirishnomalar</div>
+					<hr class="hr-list">
+					<div class="notifications-item">
+						Jamol Umarov <span>arizalar doskasiga ariza joyladi.</span>
+						<p>24-avgust, 2018 (12 kun oldin)</p>
+					</div>
+					<hr class="hr-list">
+					<div class="notifications-item">
+						Eshpo’lat Nurqobilov <span>uchun ingliz tili o’qituvchisi kerak ekan.</span>
+						<p>12-Iyun, 2018 (46 kun oldin)</p>
+					</div>
+					<hr class="hr-list">
+					<div class="notifications-item">
+						Umar Tursunov <span>arizalar doskasiga ariza joyladi.</span>
+						<p>4-Iyun, 2018 (52 kun oldin)</p>
+					</div>
+					<hr class="hr-list">
+					<div class="notifications-item">
+						Ukki.uz <span>saytiga xush kelibsiz!</span>
+						<p>25-May, 2018 (63 kun oldin)</p>
+					</div>
+					<hr class="hr-list">
+				</div>
+				<div class="messages-popup">
+					<div class="popup-subtitle">Xabarlar va arizalar</div>
+					<hr class="hr-list">
+					<div class="messages-item">
+						<div class="messages-img"><img src="img/ph3.jpg" alt=""></div>
+						<div class="messages-info">
+							<div class="name">
+								Jamol Umarov
+								<span>15 soat oldin</span>
+							</div>
+							<a href="" class="text">Ingliz tilini o’rganmoqchi edim. Menga tajribali repititor kerak, tanishingiz yo’qmi?</a>
+						</div>
+					</div>
+					<hr class="hr-list">
+					<div class="messages-item">
+						<div class="messages-img"><img src="img/comm1.jpg" alt=""></div>
+						<div class="messages-info">
+							<div class="name">
+								Komol Narkulov
+								<span>Kecha</span>
+							</div>
+							<a href="#" class="text">Web design bo’yicha yaxshi mutaxassisni qidirayotgan edim. Siz yaxshiga o’xshadi…</a>
+						</div>
+					</div>
+					<hr class="hr-list">
+					<div class="messages-item">
+						<div class="messages-img"><img src="img/comm2.jpg" alt=""></div>
+						<div class="messages-info">
+							<div class="name">
+								Alisher Fayziev
+								<span>15.09.2018</span>
+							</div>
+							<a href="#" class="text">Ingliz tilini o’rganmoqchi edim. Menga tajribali repititor kerak, tanishingiz yo’qmi?</a>
+						</div>
+					</div>
+					<hr class="hr-list">
+					<a href="#" class="view-all-messages">Hamma xabar va arizalarni ko’rish</a>
+				</div>
+			</div>
+		</nav>
+		<nav class="breadcrumbs">
+			<div class="container">
+				<div class="breadcrumbs-line">
+					<div class="breadcrumbs-item"><a href="index.html">Bosh sahifa</a></div>
+					<div class="breadcrumbs-item"><a href="#">Shahsiy kabinet</a></div>
+					<div class="breadcrumbs-item"><span>ko’p beriladigan savollar</span></div>
+				</div>
+			</div>
+		</nav>
+		<nav class="profilebar">
+			<div class="container">
+				<ul class="profilebar-list">
+					<li class="profilebar-list-item active"><a href="learner-profile–admin.html">Shaxsiy ma’lumotlar</a></li>
+					<li class="profilebar-list-item"><a href="learner-profile–my-applications.html">Mening arizalarim</a></li>
+					<li class="profilebar-list-item"><a href="learner-profile-articles.html">Maqolalar</a></li>
+					<li class="profilebar-list-item"><a href="learner-profile–faq.html">Ko’p beriladigan savollar</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<section class="section section_tutor_profile profile_admin">
+		<div class="container">
+			<div class="learner_profile_admin-content">
+				<div class="learner_profile_admin">
+					<p class="subtitle">Profil (ID: 97498)</p>
+					<hr class="hr-list">
+					<div class="take_picture">
+						<div class="take_picture-item image" style="background-image: url(img/ph6.jpg);"></div>
+						<div class="take_picture-item">
+							<div class="item-first">Kompyuteringizdan rasmni tashlang.</div>
+							<div class="item-second">Rasmlarni 3: 4 nisbatda va 3MB dan katta bo’lmagan rasmlarni yuklash tavsiya etiladi.</div>
+							<label for="take" class="btn btn-text">+ Rasm yuklash</label>
+							<input id="take" type="file" class="take-picture-file">
+						</div>
+					</div>
+					<div class="profile">
+						<div class="profile-item">
+							<div class="form-group">
+								<div class="form-group-item">
+									<label for="fgi1" class="form-control-label">Ism <span>*</span></label>
+									<input id="fgi1" type="text" class="form-control" placeholder="Ismingizni kiriting">
+								</div>
+								<div class="form-group-item">
+									<label for="fgi2" class="form-control-label">Familiya <span>*</span></label>
+									<input id="fgi2" type="text" class="form-control" placeholder="Familiyangizni kiriting">
+								</div>
+								<div class="form-group-item">
+									<label for="fgi3" class="form-control-label">Sharif <span>*</span></label>
+									<input id="fgi3" type="text" class="form-control" placeholder="Sharifingizni kiriting">
+								</div>
+							</div>
+							<div class="form-group-date-of">
+								<div class="form-group-sm-item form-gender">
+									<label class="form-control-label">Jinsi <span>*</span></label>
+									<select data-placeholder="Tanlang" class="chosen-select" tabindex="5">
+										<option value=""></option>
+										<option>Erkak</option>
+										<option>Ayol</option>
+									</select>
+								</div>
+								<div class="form-group-sm-item form-gender">
+									<label class="form-control-label">Tug’ilgan sanasi <span>*</span></label>
+									<select data-placeholder="Oy" class="chosen-select" tabindex="5">
+										<option value=""></option>
+										<option>Yanvar</option>
+										<option>Fevral</option>
+										<option>Mart</option>
+										<option>Aprel</option>
+										<option>May</option>
+										<option>Iyun</option>
+										<option>Iyul</option>
+										<option>Avgust</option>
+										<option>Sentyabr</option>
+										<option>Oktyabr</option>
+										<option>Noyabr</option>
+										<option>Dekabr</option>
+									</select>
+								</div>
+								<div class="form-group-sm-item form-gender">
+									<select data-placeholder="Kun" class="chosen-select" tabindex="5">
+										<option value=""></option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+										<option>21</option>
+										<option>22</option>
+										<option>23</option>
+										<option>24</option>
+										<option>25</option>
+										<option>26</option>
+										<option>27</option>
+										<option>28</option>
+										<option>29</option>
+										<option>30</option>
+										<option>31</option>
+									</select>
+								</div>
+								<div class="form-group-sm-item">
+									<input type="text" placeholder="Yil" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="learner_profile_admin">
+					<p class="subtitle">qo’shimcha ma’lumotlar</p>
+					<hr class="hr-list">
+					<div class="additional-information">
+						<div class="form-group">
+							<label class="form-control-label">Ta’lim darajasi <span>*</span></label>
+							<select data-placeholder="Kerakli fanni tanlang" class="chosen-select" tabindex="5">
+								<option value=""></option>
+								<option>Algebra</option>
+								<option>Ingliz tili</option>
+								<option>Matematika</option>
+								<option>Nemis tili</option>
+								<option>Russ tili</option>
+								<option>Fizika</option>
+								<option>Vokal</option>
+								<option>Informatika</option>
+								<option>Tarix</option>
+								<option>Menejment</option>
+								<option>Filosofiya</option>
+								<option>Ximiya</option>
+								<option>Web dizayn</option>
+								<option>Anatomiya</option>
+								<option>Astronomiya</option>
+								<option>Biologiya</option>
+								<option>Geometriya</option>
+								<option>Geografiya</option>
+								<option>Jurnalistika</option>
+								<option>Logika</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label class="form-control-label">Majburiy dars dasturi <span>*</span></label>
+							<select data-placeholder="Kerakli fanni tanlang" class="chosen-select" tabindex="5">
+								<option value=""></option>
+								<option>Algebra</option>
+								<option>Ingliz tili</option>
+								<option>Matematika</option>
+								<option>Nemis tili</option>
+								<option>Russ tili</option>
+								<option>Fizika</option>
+								<option>Vokal</option>
+								<option>Informatika</option>
+								<option>Tarix</option>
+								<option>Menejment</option>
+								<option>Filosofiya</option>
+								<option>Ximiya</option>
+								<option>Web dizayn</option>
+								<option>Anatomiya</option>
+								<option>Astronomiya</option>
+								<option>Biologiya</option>
+								<option>Geometriya</option>
+								<option>Geografiya</option>
+								<option>Jurnalistika</option>
+								<option>Logika</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="learner_profile_admin contact-information">
+					<p class="subtitle">Bog’lanish malumotlari</p>
+					<hr class="hr-list">
+					<div class="form-group">
+						<div class="form-group-item">
+							<label for="fgi20" class="form-control-label">Aloqa telefon raqam <span>*</span></label>
+							<input id="fgi20" type="text" class="form-control masked-input-phone">
+							<button class="btn btn-text">+ Telefon raqimi qo'shish</button>
+						</div>
+						<div class="form-group-item">
+							<label for="fgi21" class="form-control-label">E-mail manzili <span>*</span></label>
+							<input id="fgi21" type="email" class="form-control">
+							<button class="btn btn-text">+ Email manzili qo'shish</button>
+						</div>
+						<div class="form-group-item">
+							<label for="fgi22" class="form-control-label">Skype <span>*</span></label>
+							<input id="fgi22" type="text" class="form-control">
+						</div>
+					</div>
+				</div>
+				<div class="learner_profile_admin profile">
+					<div class="profile-item">
+						<p class="subtitle">Manzil</p>
+						<hr class="hr-list">
+						<div class="profile-group">
+							<div class="form-group">
+								<div class="form-group-item form-select">
+									<label class="form-control-label">Shahar <span>*</span></label>
+									<select data-placeholder="Shaharni tanlang" class="chosen-select" tabindex="5">
+										<option value=""></option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+										<option>Andijon</option>
+									</select>
+								</div>
+								<div class="form-group-item form-select">
+									<label class="form-control-label">Tuman <span>*</span></label>
+									<select data-placeholder="Tumanni tanlang" class="chosen-select" tabindex="5">
+										<option value=""></option>
+										<optgroup label="Andijon viloyati">
+											<option>Andijon (tuman)</option>
+											<option>Asaka tumani</option>
+											<option>Baliqchi tumani</option>
+											<option>Boʻz (tuman)</option>
+											<option>Buloqboshi tumani</option>
+											<option>Izboskan (tuman)</option>
+											<option>Jalaquduq (tuman)</option>
+											<option>Xoʻjaobod tumani</option>
+											<option>Qoʻrgʻontepa tumani</option>
+											<option>Marhamat tumani</option>
+											<option>Oltinkoʻl (tuman)</option>
+											<option>Paxtaobod tumani</option>
+											<option>Shahrixon (tuman)</option>
+											<option>Ulugʻnor (tuman)</option>
+										</optgroup>
+									</select>
+								</div>
+								<div class="form-group-item">
+									<label for="fgi13" class="form-control-label">Kvartal <span>*</span></label>
+									<input id="fgi13" type="text" class="form-control form-sm">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-group-item form-select">
+									<label class="form-control-label">Metro <span>*</span></label>
+									<select data-placeholder="Tanlanmagan" class="chosen-select" tabindex="5">
+										<option value=""></option>
+										<optgroup label="Chilonzor yonalish">
+											<option>Buyuk Ipak Yoli</option>
+											<option>Pushkin</option>
+											<option>Hamid Olimjon</option>
+											<option>Amir Temur Xiyoboni</option>
+											<option>Mustaqillik Maydoni</option>
+											<option>Pakhtakor</option>
+											<option>Bunyodkor</option>
+											<option>Milliy Bog'</option>
+											<option>Novza</option>
+											<option>Mirzo Ulugbek</option>
+											<option>Chilonzor</option>
+											<option>Olmazor</option>
+										</optgroup>
+										<optgroup label="Uzbekiston yonalish">
+											<option>Beruniy</option>
+											<option>Tinchlik</option>
+											<option>Chorsu</option>
+											<option>Gʻafur Gʻulom</option>
+											<option>Alisher Navoiy</option>
+											<option>Uzbekiston</option>
+											<option>Kosmonavtlar</option>
+											<option>Oybek</option>
+											<option>Toshkent</option>
+											<option>Mashinasozlar</option>
+											<option>Dustlik</option>
+										</optgroup>
+										<optgroup label="Yunusobod yonalish">
+											<option disabled>Turkiston</option>
+											<option disabled>Yunusobod</option>
+											<option>Shahriston</option>
+											<option>Bodomzor</option>
+											<option>Minor</option>
+											<option>Abdulla Qodiriy</option>
+											<option>Yunus Rajabiy</option>
+											<option>Ming O'rik</option>
+										</optgroup>
+									</select>
+								</div>
+								<div class="form-group-item">
+									<label for="fgi5" class="form-control-label">Ko’cha nomi</label>
+									<input id="fgi5" type="text" class="form-control" placeholder="Ko’cha nomini kiriting">
+								</div>
+								<div class="form-group-item form-sm-item">
+									<div class="sm-item">
+										<label for="fgi6" class="form-control-label">Uy</label>
+										<input id="fgi6" type="text" class="form-control form-sm">
+									</div>
+									<div class="sm-item">
+										<label for="fgi7" class="form-control-label">Kv/Ofis</label>
+										<input id="fgi7" type="text" class="form-control form-sm">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="learner_profile_admin interests">
+					<p class="subtitle">qiziqishlar</p>
+					<hr class="hr-list">
+					<div class="interests-left-right">
+						<ul class="interests-l-r">
+							<li class="interests-item">3D, 2D modellash va grafikalar</li>
+							<li class="interests-item">Linux boshqaruvi</li>
+							<li class="interests-item">Aerobika</li>
+							<li class="interests-item">Samolyotning aerodinamikasi</li>
+							<li class="interests-item">Akrobatika</li>
+							<li class="interests-item">Aktyorlik mahorati</li>
+							<li class="interests-item">Alban tili</li>
+							<li class="interests-item">Algebra</li>
+						</ul>
+						<div class="interests-center">
+							<button class="btn btn-primary"><i class="fas fa-chevron-right"></i></button>
+							<button class="btn btn-primary"><i class="fas fa-chevron-left"></i></button>
+							<button class="btn btn-primary"><i class="fas fa-angle-double-right"></i></button>
+							<button class="btn btn-primary"><i class="fas fa-angle-double-left"></i></button>
+						</div>
+						<ul class="interests-l-r">
+							<li class="interests-item">Matematika</li>
+							<li class="interests-item">Aqliy arifmetik</li>
+							<li class="interests-item">Veb-dizayn</li>
+							<li class="interests-item">Dasturlash</li>
+							<li class="interests-item">Ingliz tili</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-6 col-sm-3 col-md-2 col-lg-2">
+						<div class="footer-logo">
+							<a href="index.html"><img src="img/logo_footer.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="offset-lg-4 col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="location" data-toggle="modal" data-target="#exampleModalCenter">
+							<span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+							<span class="location-text">Toshkent</span>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h3 class="modal-title" id="exampleModalLongTitle">Shahringizni tanlang</h3>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<hr class="hr-dark"></hr>
+									<div class="modal-body">
+										<div class="form-group">
+											<label for="findtown" class="form-control-label">Ro'yxatdan o'zingizning shaharingizni tanlang yoki uni spam-shaklda kiriting:</label>
+											<input type="text" class="form-control form-control-small" placeholder="O’zingizga kerakli shaharni kiriting..." id="findtown">
+										</div>
+										<div class="cities">
+											<ul class="cities-list">
+												<li class="cities-item city-active"><a href="#">Tashkent</a></li>
+												<li class="cities-item"><a href="#">Samarqand</a></li>
+												<li class="cities-item"><a href="#">Namangan</a></li>
+												<li class="cities-item"><a href="#">Andijon</a></li>
+												<li class="cities-item"><a href="#">Buxoro</a></li>
+												<li class="cities-item"><a href="#">Nukus</a></li>
+												<li class="cities-item"><a href="#">Qarshi</a></li>
+												<li class="cities-item"><a href="#">Qoʻqon</a></li>
+												<li class="cities-item"><a href="#">Chirchiq</a></li>
+												<li class="cities-item"><a href="#">Fargʻona</a></li>
+												<li class="cities-item"><a href="#">Jizzax</a></li>
+												<li class="cities-item"><a href="#">Urganch</a></li>
+												<li class="cities-item"><a href="#">Termiz</a></li>
+												<li class="cities-item"><a href="#">TashMargʻilonkent</a></li>
+											</ul>
+											<ul class="cities-list">
+												<li class="cities-item"><a href="#">Navoiy</a></li>
+												<li class="cities-item"><a href="#">Angren</a></li>
+												<li class="cities-item"><a href="#">Olmaliq</a></li>
+												<li class="cities-item"><a href="#">Bekobod</a></li>
+												<li class="cities-item"><a href="#">Xoʻjayli</a></li>
+												<li class="cities-item"><a href="#">Denov</a></li>
+												<li class="cities-item"><a href="#">Shahrixon</a></li>
+												<li class="cities-item"><a href="#">Chust</a></li>
+												<li class="cities-item"><a href="#">Kogon</a></li>
+												<li class="cities-item"><a href="#">Zarafshon</a></li>
+												<li class="cities-item"><a href="#">Koson</a></li>
+												<li class="cities-item"><a href="#">Qoʻngʻirot</a></li>
+												<li class="cities-item"><a href="#">Taxiatosh</a></li>
+												<li class="cities-item"><a href="#">Shahrisabz</a></li>
+											</ul>
+											<ul class="cities-list">
+												<li class="cities-item"><a href="#">Kattaqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Asaka</a></li>
+												<li class="cities-item"><a href="#">Xiva</a></li>
+												<li class="cities-item"><a href="#">Guliston</a></li>
+												<li class="cities-item"><a href="#">Beruniy</a></li>
+												<li class="cities-item"><a href="#">Chortoq</a></li>
+												<li class="cities-item"><a href="#">Toʻrtkoʻl</a></li>
+												<li class="cities-item"><a href="#">Urgut</a></li>
+												<li class="cities-item"><a href="#">Kosonsoy</a></li>
+												<li class="cities-item"><a href="#">Kitob</a></li>
+												<li class="cities-item"><a href="#">Yangiyoʻl</a></li>
+												<li class="cities-item"><a href="#">Gʻijduvon</a></li>
+												<li class="cities-item"><a href="#">Xonqa</a></li>
+												<li class="cities-item"><a href="#">Oqtosh</a></li>
+											</ul>
+											<ul class="cities-list">
+												<li class="cities-item"><a href="#">Chimboy</a></li>
+												<li class="cities-item"><a href="#">Parkent</a></li>
+												<li class="cities-item"><a href="#">Ohangaron</a></li>
+												<li class="cities-item"><a href="#">Uchqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Qamashi</a></li>
+												<li class="cities-item"><a href="#">Quva</a></li>
+												<li class="cities-item"><a href="#">Uchquduq</a></li>
+												<li class="cities-item"><a href="#">Xonobod</a></li>
+												<li class="cities-item"><a href="#">Yangiyer</a></li>
+												<li class="cities-item"><a href="#">Quvasoy</a></li>
+												<li class="cities-item"><a href="#">Mangʻit</a></li>
+												<li class="cities-item"><a href="#">Rishton</a></li>
+												<li class="cities-item"><a href="#">Nurota</a></li>
+												<li class="cities-item"><a href="#">Muborak</a></li>
+											</ul>
+											<ul class="cities-list">
+												<li class="cities-item"><a href="#">Toshbuloq</a></li>
+												<li class="cities-item"><a href="#">Yangiqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Toʻraqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Gurlan</a></li>
+												<li class="cities-item"><a href="#">Piskent</a></li>
+												<li class="cities-item"><a href="#">Qibray</a></li>
+												<li class="cities-item"><a href="#">Zomin</a></li>
+												<li class="cities-item"><a href="#">Iskandar</a></li>
+												<li class="cities-item"><a href="#">Qoraoʻzak</a></li>
+												<li class="cities-item"><a href="#">Shovot</a></li>
+												<li class="cities-item"><a href="#">Taxtakoʻpir</a></li>
+												<li class="cities-item"><a href="#">Jarqoʻrgʻon</a></li>
+												<li class="cities-item"><a href="#">Bulungʻur</a></li>
+												<li class="cities-item"><a href="#">. . .</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-5 col-md-3 col-lg-3">
+						<div class="social-icons">
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-facebook-f"></i></a>
+							</div>
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-twitter"></i></a>
+							</div>
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-youtube"></i></a>
+							</div>
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-instagram"></i></a>
+							</div>
+							<div class="social-item">
+								<a href="#" class="btn btn-icon btn-text btn-medium"><i class="fab fa-telegram-plane"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="hr-dark">
+			</div>
+			<div class="footer-body">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<h3 class="h3">Kompaniya</h3>
+						<ul class="footer-list">
+							<li class="footer-list-item"><a href="#">Biz haqimizda</a></li>
+							<li class="footer-list-item"><a href="#">Maqolalar</a></li>
+							<li class="footer-list-item"><a href="#">Reklama</a></li>
+							<li class="footer-list-item"><a href="#">Loyihada qatnashish</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<h3 class="h3">Bu qanday ishlaydi?</h3>
+						<ul class="footer-list">
+							<li class="footer-list-item"><a href="#">Repetitorlar uchun</a></li>
+							<li class="footer-list-item"><a href="#">Onlayn kurs mualliflari uchun</a></li>
+							<li class="footer-list-item"><a href="#">O’quv markazlari uchun</a></li>
+							<li class="footer-list-item"><a href="#">O’quvchilar uchun</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<h3 class="h3">O’quvchilarga</h3>
+						<ul class="footer-list">
+							<li class="footer-list-item"><a href="#">Ariza yuborish</a></li>
+							<li class="footer-list-item"><a href="#">O’qituvchilar qora ro’yxatda</a></li>
+							<li class="footer-list-item"><a href="#">Mijozlar: biz haqimizda</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<h3 class="h3">Bog’lanish</h3>
+						<ul class="footer-list">
+							<li class="footer-list-item">
+								<a href="tel:+998(90)900-12-34">
+									<i class="fas fa-phone"></i>
+									+998(90) 900-12-34
+								</a>
+							</li>
+							<li class="footer-list-item">
+								<a href="mailto:ukki@info.com">
+									<i class="fas fa-envelope"></i>
+									ukki@info.com
+								</a>
+							</li>
+							<li class="footer-list-item">
+								<a href="#">
+									<i class="fab fa-telegram-plane"></i>
+									Toshkent, Yakkasaray
+								</a>
+							</li>
+							<li class="footer-list-item">
+								<button type="button" class="btn btn-primary btn-small">Xabar jo'natish</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<hr class="hr-dark">
+				<div class="footer-copyright">
+					<p>Copyright © 2018 <b>Ukki</b>. Barcha huquqlar himoyalangan.</p>
+					<p><b>Shamsweb</b> tomonidan ishlab chiqilgan.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/jquery/jquery.sticky-kit.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/jquery/jquery.maskedinput.min.js"></script>
+	<script src="libs/jquery/chosen.jquery.min.js"></script>
+	<script src="libs/jquery/jquery-ui.min.js"></script>
+	<script src="libs/bootstrap4/js/popper.min.js"></script>
+	<script src="libs/bootstrap4/js/bootstrap.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="libs/js/script.js"></script>
+	<script>
+
+		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	</body>
+	</html>

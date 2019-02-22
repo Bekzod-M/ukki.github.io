@@ -1,0 +1,641 @@
+@media(max-width: 1180px){
+	.filter-wrap .chosen-container-multi .chosen-choices,
+	.filter-wrap .chosen-container-single .chosen-single{
+		width: 185px;
+	}
+	.filter-wrap .chosen-container .chosen-drop{
+		width: 185px;
+	}
+	.filter-wrap .form-range .ui-widget.ui-widget-content{
+		width: 167px;
+	}
+	.filter-wrap .form-range .range{
+		width: 167px;
+	}
+	.aside-articles .form-control-medium{
+		width: 70%;
+	}
+	.section_auth .sign-up-radio {
+		flex-wrap: initial;
+	}
+	.section_auth .sign-up-radio-item label {
+		font-size: 14px;
+		padding: 12px 38px;
+	}
+	.section_auth .sign-up-radio .nav-item{
+		margin-right: 4px;
+	}
+	.section_auth .international-code{
+		display: none;
+	}
+	.section_auth .auth-body .masked-input-phone {
+		width: 100%;
+	}
+	.header .navbar .auth-buttons-item{
+		margin: 0 20px 0 0;
+	}
+	.header .navbar .auth-buttons.my-profile {
+		justify-content: flex-end;
+	}
+	.application-content .form-group.form-check.a-b::after,
+	.application-content .form-group.form-check.a-b::before {
+		display: none;
+	}
+	.application-content .collapse-body{
+		justify-content: space-between;
+	}
+	.following-top-item .to-right::after, .following-top-item .to-left::before {
+		width: 97px;
+	}
+	.form-group.choose .chosen-drop,
+	.form-group.choose .chosen-choices, .form-group.choose .chosen-single{
+		width: 430px;
+	}
+	.education-c-profle-minibar.fix {
+		width: 72.4%;
+		margin: 0;
+	}
+	.section_directions .item-desc p{
+		font-size: 14px;
+	}
+	.learn-date-view-item{
+		margin-right: 5px;
+	}
+	.profile .profile-item {
+		max-width: 565px;
+	}
+	.storage{
+		margin-left: 0;
+	}
+	.storage-filter-item {
+		align-items: start;
+		flex-direction: column;
+	}
+	.storage-filter-item .form-choose{
+		margin-left: 0;
+	}
+	.storage-top .btn-primary{
+		margin-bottom: 8px;
+	}
+	.header .profilebar .container{
+		padding: 15px;
+	}
+	.header .profilebar .profilebar-list{
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	.header .profilebar .profilebar-list-item {
+		width: 210px;
+	}
+}
+@media(max-width: 991px){
+	.header .navbar .row .col-sm-3, .col-sm-9{
+		order: -1;
+	}
+	.header .navbar .navbar-logo,
+	.header .navbar .auth-buttons{
+		padding-top: 20px;
+	}
+	.section_directions .main-tabs{
+		flex-direction: column;
+	}
+	.section_directions .main-tabs .main-tab {
+		width: 100%;
+	}
+	.list-content-top-bottom .nav-pills{
+		display: none;
+	}
+	.list-sort-pills-tab{
+		margin-right: 0;
+	}
+	.filter-wrap .chosen-container-multi .chosen-choices,
+	.filter-wrap .chosen-container-single .chosen-single{
+		width: 210px;
+	}
+	.filter-wrap .chosen-container .chosen-drop{
+		width: 210px;
+	}
+	.aside-articles .form-control-medium {
+		width: 58%;
+	}
+	.aside-articles{
+		margin-top: 30px;
+	}
+	.section_auth .sign-up-radio-item label {
+		font-size: 16px;
+		padding: 12px 45px;
+		width: 100%;
+	}
+	.section_auth .auth-content{
+		margin-bottom: 30px;
+	}
+	.collapsible-content .form-group-selected{
+		flex-direction: column;
+	}
+	.collapsible-content .form-lesson{
+		flex-wrap: wrap;
+		justify-content: start;
+	}
+	.form-group.price {
+		margin: 0 12px 0 0;
+	}
+	.form-group.form-spinner {
+		margin-right: 10px;
+	}
+	.profile .form-group{
+		flex-direction: column;
+	}
+	.profile .form-group .form-group-item{
+		margin: 0 0 8px 0;
+	}
+	.user-popup{
+		top: 73px;
+	}
+	.messages-popup,
+	.notifications-popup{
+		top: 73px;
+	}
+	.aside-edcpr {
+		margin: 0;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.aside-edcpr-item{
+		width: 240px;
+	}
+	.aside-profle-img-change{
+		top: 28px;
+	}
+	.change-banner-image{
+		margin-left: 0;
+	}
+	.following-top-item .to-right::after, .following-top-item .to-left::before {
+		width: 60px;
+	}
+	.filter-wrap .form-group{
+		padding: 10px;
+	}
+	.slick-prev {
+		left: 89%;
+	}
+	.section_my_profile .list-content-item-left{
+		margin: auto;
+	}
+	.section_my_profile .list-content-item{
+		flex-direction: column;
+	}
+	.tutors-right{
+		justify-content: center;
+	}
+	.section_my_profile .right-body{
+		padding-left: 20px;
+	}
+	.personal-profile .profile{
+		padding: 0 0 0 30px;
+	}
+	.storage-filter-item {
+		align-items: end;
+		flex-direction: row;
+	}
+	.form-tutor {
+		width: 400px;
+		margin: auto;
+		padding-top: 30px;
+	}
+}
+@media(max-width: 767px){
+	.section_auth .sign-up-form-item{
+		margin-bottom: 8px;
+	}
+	.applications-list{
+		grid-template-columns: 1fr;
+	}
+	.preferences-item{
+		margin-bottom: 20px;
+	}
+	.section_for_partners .form-group .form-group-item {
+		width: 100%;
+	}
+	.articles-wrap-img{
+		background-size: cover;
+	}
+	.section_auth .sign-up-radio {
+		flex-direction: column;
+	}
+	.collapsible-content .form-group.cpn{
+		flex-direction: column;
+	}
+	.collapsible-content .form-group.cpn .btn.btn-text {
+		margin: 8px 0 20px;
+	}
+	.section_intro.education-c-profle .caption{
+		align-items: start;
+		margin-top: 85px;
+		flex-direction: column;
+	}
+	.caption-contacts {
+		display: flex;
+		margin-top: 30px;
+	}
+	.section_intro.education-c-profle .caption-social-icons{
+		margin-left: 20px;
+	}
+	.section_intro.education-c-profle .caption-phone{
+		text-align: left;
+	}
+	.education-c-profle .rating {
+		left: 0;
+		margin-left: 10px;
+	}
+	.following-top-item .to-right::after, .following-top-item .to-left::before {
+		display: none;
+	}
+	.following-content-item{
+		left: 0;
+	}
+	.advertising-requirements .social-icons-item{
+		margin-bottom: 12px;
+	}
+	.advertising-requirements .social-icons{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.upload-photo {
+		width: 320px;
+		margin: 0 auto 20px;
+	}
+	.upload-photo-img{
+		text-align: center;
+	}
+	.contact-information .form-group{
+		flex-wrap: wrap;
+	}
+	.contact-information .form-group-item .btn.btn-text{
+		margin-bottom: 24px;
+	}
+	.filter-wrap .form-group {
+		width: 300px;
+		margin: auto;
+	}
+	.filter-wrap .btn-filters {
+		width: 300px;
+		margin: auto;
+	}
+	.filter-wrap .form-group{
+		padding: 20px;
+	}
+	.filter-wrap .form-range .ui-widget.ui-widget-content{
+		width: 240px;
+	}
+	.slick-prev {
+		left: 86%;
+	}
+	.section_cta_form .application_form{
+		flex-direction: column;
+	}
+	.section_cta_form .student-name .form-control {
+		max-width: 400px;
+		margin-right: 0;
+	}
+	.section_cta_form .student-phone .form-control {
+		max-width: 400px;
+		margin: 16px 0;
+	}
+	.section_cta_form .application_form .btn{
+		width: 400px;
+	}
+	.section_cta_form .form-group {
+		display: flex;
+		justify-content: center;
+	}
+	.form-group-date-of .form-group-sm-item{
+		margin-bottom: 12px;
+	}
+	.interests-left-right{
+		flex-direction: column;
+	}
+	.interests-center{
+		flex-direction: row-reverse;
+		margin: 12px 0 0;
+	}
+	.course-top-content{
+		flex-direction: column;
+	}
+	.call-back{
+		margin: 30px 0 0;
+	}
+	.tutors-right{
+		flex-direction: column;
+	}
+	.section_my_profile .right-prices{
+		padding-bottom: 30px;
+	}
+	.certificates-item{
+		margin-bottom: 16px;
+	}
+}
+@media(max-width: 575px){
+	.header .topbar .row{
+		padding-top: 5px;
+	}
+	.header .topbar .row .col-12{
+		order: 1;
+	}
+	.header .topbar .social-icons {
+		justify-content: space-around;
+	}
+	.header .navbar .navbar-logo{
+		margin: auto;
+	}
+	.header .navbar .auth-buttons{
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+	.section_intro .caption .form-main-search{
+		flex-direction: column;
+	}
+	.section_intro .caption .form-control{
+		margin: 0 0 20px;
+	}
+	.articles-wrap-img{
+		background-position: center;
+	}
+	.footer-top .social-icons{
+		justify-content: space-around;
+		margin-top: 20px;
+	}
+	.footer .hr-dark {
+		border-color: var(--gray4);
+		margin: 10px 0 0;
+	}
+	.modal-sm{
+		margin: auto;
+	}
+	.list-content-item{
+		flex-direction: column;
+	}
+	.courses-right{
+		padding: 20px;
+	}
+	.right-body-courses-info{
+		flex-direction: column;
+	}
+	.list-content-item-left{
+		margin: auto;
+	}
+	.body-order-item .btn.btn-text,
+	.body-order-item{
+		margin-bottom: 10px;
+	}
+	.breadcrumb{
+		flex-direction: column;
+		padding-left: 40px;
+	}
+	.breadcrumb-item + .breadcrumb-item::before {
+		display: none;
+	}
+	.breadcrumb .breadcrumb-item{
+		padding-left: 0;
+	}
+	.group-selected-item{
+		flex-direction: column;
+		align-items: start;
+		margin: 8px 0;
+	}
+	.group-selected-item .form-group.month{
+		margin: 8px 0 0;
+	}
+	.group-selected-item .form-group{
+		margin: 8px 0 0;
+	}
+	.form-group.not-selected{
+		margin: inherit;
+	}
+	.form-group.not-selected .chosen-drop,
+	.form-group.not-selected .chosen-single {
+		width: 260px;
+	}
+	.header .navbar .auth-buttons.my-profile {
+		justify-content: center;
+	}
+	.user-popup,
+	.messages-popup,
+	.notifications-popup{
+		top: 105px;
+	}
+	.section_intro.education-c-profle .caption .h2{
+		font-size: 25px;
+	}
+	.section_intro.education-c-profle .list-item{
+		margin-bottom: 4px;
+	}
+	.caption-info .lead{
+		font-size: 15px;
+	}
+	.section_intro.education-c-profle {
+		height: 400px;
+	}
+	.applications-filter .form-group{
+		margin-bottom: 16px;
+	}
+	.advertising-following-content{
+		flex-direction: column;
+	}
+	.form-group.choose .chosen-drop,
+	.form-group.choose .chosen-choices,
+	.form-group.choose .chosen-single{
+		width: 330px;
+	}
+	.connect{
+		margin: 18px 0;
+	}
+	.education-right{
+		padding: 20px;
+	}
+	.slick-prev {
+		left: 84%;
+	}
+	.take_picture-item{
+		margin-bottom: 12px;
+	}
+	.take_picture{
+		flex-wrap: wrap;
+	}
+	.interests-center .btn{
+		width: initial;
+	}
+	.interests-l-r{
+		width: 270px;
+	}
+	.section_my_profile .info-item {
+		width: 120px;
+		margin-bottom: 16px;
+	}
+	.section_my_profile .info-item-my-profile{
+		flex-wrap: wrap;
+	}
+	.reviews-head .btn{
+		margin-top: 8px;
+	}
+	.reviews-comments{
+		flex-direction: column;
+	}
+	.comments-message{
+		margin: 12px 0 0;
+	}
+	.right-body{
+		padding-left: 20px;
+	}
+}
+@media(max-width: 530px){
+	.header .topbar .modal-body .form-control-label{
+		line-height: 13px;
+	}
+	.form-group.general{
+		margin-top: 12px;
+	}
+	.collapsible-content .course-btn .btn{
+		margin: 0 0 12px;
+	}
+	.section_tutor_profile .caption .h3{
+		margin-bottom: 20px;
+	}
+}
+@media(max-width: 480px){
+	.header .navbar .auth-buttons-item{
+		margin-right: 8px;
+	}
+	.header .navbar .nav-menu{
+		flex-direction: column;
+	}
+	.header .navbar .nav-menu-list a{
+		padding: 10px;
+	}
+	.header .navbar .login-with-number .international-code{
+		width: 60px;
+		margin-right: 8px;
+	}
+	.header .navbar .login-with-number .form-control-medium {
+		padding: 0px 10px;
+	}
+	.header .navbar .login-with-number .masked-input-phone{
+		width: 100%;
+	}
+	.header .navbar .login-with-number .international-code{
+		display: none;
+	}
+	.section_for_partners .h2{
+		font-size: 26px;
+	}
+	.list-content-top-bottom{
+		flex-direction: column;
+		align-items: self-start;
+	}
+	.top-bottom-item{
+		margin-bottom: 15px;
+	}
+	.filter-wrap .form-choose-item {
+		display: initial;
+	}
+	.learn-date-view{
+		flex-direction: column;
+	}
+	.section_articles .caption{
+		flex-direction: column;
+	}
+	.section_articles .caption .h2{
+		line-height: 40px;
+		margin-bottom: 16px;
+	}
+	.right-body-loc {
+		display: flex;
+		flex-direction: column;
+	}
+	.learner_profile_admin.profile .chosen-drop,
+	.learner_profile_admin.profile .form-select,
+	.learner_profile_admin.profile .chosen-single {
+		width: 210px;
+	}
+	.collapsible-content .form-group.cpn .form-group-item{
+		width: initial;
+	}
+	.user-popup,
+	.messages-popup,
+	.notifications-popup{
+		top: 154px;
+	}
+	.caption-contacts{
+		flex-direction: column;
+		margin-top: 10px;
+	}
+	.section_intro.education-c-profle .caption-social-icons{
+		margin-left: 0;
+	}
+	.section_intro.education-c-profle .caption .h2{
+		font-size: 21px;
+	}
+	.form-group.science,
+	.form-group.science .chosen-drop,
+	.form-group.science .chosen-single{
+		width: 240px;
+	}
+	.form-filter-btn .btn.btn-text{
+		margin-bottom: 12px;
+	}
+	.upload-photo{
+		width: 220px;
+	}
+	.form-group.choose .chosen-drop,
+	.form-group.choose .chosen-choices,
+	.form-group.choose .chosen-single{
+		width: 230px;
+	}
+	.edcp-settings .learner_profile_admin.profile .chosen-drop,
+	.edcp-settings .learner_profile_admin.profile .form-select,
+	.edcp-settings .learner_profile_admin.profile .chosen-single{
+		width: 200px;
+	}
+	.learner_profile_admin .profile-group{
+		padding: 20px;
+	}
+	.section_intro .caption .h1{
+		font-size: 36px;
+	}
+	.slick-prev {
+		left: 80%;
+	}
+	.additional-information .chosen-drop, .additional-information .chosen-single{
+		width: 240px;
+	}
+	.form-group.interested .chosen-single,
+	.form-group.interested .chosen-drop,
+	.form-group.interested .chosen-choices{
+		width: 240px;
+	}
+	.requirements-item .form-group-item{
+		flex-wrap: wrap;
+	}
+	.requirements-item .form-group-item .form-group{
+		margin-right: 0;
+	}
+	.average-rating-item{
+		flex-direction: column;
+	}
+	.rating-stars{
+		margin-top: 12px;
+	}
+	.form-tutor{
+		width: initial;
+	}
+}
+@media(max-width: 375px){
+	.user-popup,
+	.messages-popup,
+	.notifications-popup{
+		width: 375px;
+	}
+	.slick-prev {
+		left: 80%;
+	}
+}
